@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Welcome!
 
-## Getting Started
+### This is my portfolio site.
 
-First, run the development server:
+## Access it [right here](https://chrisperrault.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+^^^^^^^^
+!!! Currently under major construction this week (February 26th - March 1st 2024)! I am migrating my current portfolio into a much-improved TS version from JS along with major responsiveness + Tailwind upgrades. Stay tuned!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project's main technologies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ![Next](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ➕ ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ➕ ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) ➕ ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Built as a way for me to dive into Next.js 14 and Vercel for the first time. I opted to try and use Next.js's App Router over the older Pages system because not only was it recommended (and I'd like to stay as "current" as possible) but also to challenge myself. I used only _some_ AI assistance when building my portfolio site, and with Next 14 being so recent, I had to rely strictly on the documentation or fresh issues to draw solutions from. Very exciting.
 
-## Learn More
+I hope you enjoy it!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Upcoming features:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- email contact form (modal, featuring form validation + error handling)
+- responsive design
+- theme switching
+- accessibility + font overhaul
+- many more tweaks
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+⭐ **Give a Star** to motivate me!
+Check out [my LinkedIn profile](https://www.linkedin.com/in/christopherperrault/)
