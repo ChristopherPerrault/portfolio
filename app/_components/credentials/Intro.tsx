@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { offside } from "../../_assets/fonts/fonts";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function CertIntro() {
-  //   const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   return (
     <div
       className={`${offside.className} flex flex-wrap justify-center mx-24 text-[color:var(--primary-yellow)] my-12 text-2xl`}

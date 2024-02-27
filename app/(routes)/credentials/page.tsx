@@ -6,7 +6,7 @@ import CertCard from "@/app/_components/credentials/CertCard";
 import InProgress from "@/app/_components/credentials/InProgress";
 import CertIntro from "@/app/_components/credentials/Intro";
 
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 // cert asset imports
 import { offside } from "../../_assets/fonts/fonts";
@@ -18,8 +18,8 @@ import figma from "../../_assets/images/certs/LI-Figma.png";
 import dataStructures from "../../_assets/images/certs/LI-DataStructures.png";
 
 export default function Credentials() {
-  //   const { lang } = useLanguage();
-  const lang = true;
+    const { lang } = useLanguage();
+
   return (
     <>
       {/* credentials page container div */}

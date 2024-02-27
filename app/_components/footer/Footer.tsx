@@ -5,12 +5,12 @@ import GitHubLogo from "../../_assets/images/github-mark-white.png";
 import LinkedInLogo from "../../_assets/images/In-White-72-╬ô├ñ├│.png";
 import { offside } from "../../_assets/fonts/fonts";
 import BackToTop from "./BackToTop";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  //   const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   const currentYear = new Date().getFullYear();
 
   return (

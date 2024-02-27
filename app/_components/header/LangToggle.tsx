@@ -1,9 +1,8 @@
 import { offside } from "../../_assets/fonts/fonts";
-// import { useLanguage } from "../../languageContext";
+import { useLanguage } from "../../languageContext";
 
 export default function LangToggle() {
-//   const { lang, toggleLang } = useLanguage();
-const lang = true;
+  const { lang, toggleLang } = useLanguage();
 
   return (
     <div className="flex justify-end m-2 group">

@@ -3,12 +3,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { handjet, dotGothic16 } from "../../_assets/fonts/fonts";
 import LangToggle from "./LangToggle";
-// import { useLanguage } from "../../languageContext";
+import { useLanguage } from "../../languageContext";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
 export default function Header() {
-//   const { lang } = useLanguage();
-  const  lang  = true;
+  const { lang } = useLanguage();
+  
 
   // used to highlight nav tab based on current page
   const pathname = usePathname();

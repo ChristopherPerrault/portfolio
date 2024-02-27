@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import Header from "./_components/header/Header";
 import Footer from "./_components/footer/Footer";
-// import { LanguageProvider } from "./languageContext";
+import { LanguageProvider } from "./languageContext";
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -28,11 +28,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="custom-border">
-          {/* <LanguageProvider> */}
-          <Header />
-          {children}
-          <Footer />
-          {/* </LanguageProvider> */}
+          <LanguageProvider>
+            <Header />
+            {children}
+            <Footer />
+          </LanguageProvider>
         </div>
       </body>
     </html>

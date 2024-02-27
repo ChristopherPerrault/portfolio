@@ -1,9 +1,9 @@
 "use client";
 import TechCard from "./TechCard";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 export default function TechStack() {
-//   const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   return (
     <div className="flex flex-wrap justify-center">
       <h1 className="w-full my-16 text-5xl text-center">

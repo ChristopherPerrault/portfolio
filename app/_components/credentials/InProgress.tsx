@@ -1,10 +1,10 @@
 "use client";
 import { offside } from "../../_assets/fonts/fonts";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function InProgress() {
-//   const { lang } = useLanguage();
-  const lang  = true;
+  const { lang } = useLanguage();
+  
   return (
     <div
       className={`${offside.className} flex flex-wrap flex-col justify-center mx-28 text-[color:var(--primary-yellow)] text-2xl my-12`}

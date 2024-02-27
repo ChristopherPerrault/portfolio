@@ -3,7 +3,7 @@
 import ProjectCard from "./_components/projects/ProjectCard";
 import ProjectsIntro from "./_components/projects/ProjectsIntro";
 
-// import { useLanguage } from "./languageContext";
+import { useLanguage } from "./languageContext";
 
 // project asset imports
 import regexRecords from ".//_assets/images/projects/regexRecords.png";
@@ -16,8 +16,8 @@ import regexAcademy from ".//_assets/images/projects/regexAcademy.png";
 import none from ".//_assets/images/projects/none.png";
 
 export default function Projects() {
-  // const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   return (
     <>
       {/* projects page container div */}

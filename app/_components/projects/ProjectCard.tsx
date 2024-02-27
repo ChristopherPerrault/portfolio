@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { offside } from "../../_assets/fonts/fonts";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function ProjectCard({
   title,
@@ -13,8 +13,8 @@ export default function ProjectCard({
   url,
   gitHubUrl,
 }) {
-  //   const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   return (
     // container div for top & bottom sides
     <div className="flex flex-col w-1/4 h-full m-8 my-6 border rounded-md shadow-xl border-neutral-950 bg-neutral-500">

@@ -3,11 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import GitHubLogo from "../../_assets/images/github-mark-white.png";
 import LinkedInLogo from "../../_assets/images/In-White-72-╬ô├ñ├│.png";
-// import { useLanguage } from "../../languageContext";
+import { useLanguage } from "../../languageContext";
 
 export default function SocialLinks() {
-//   const { lang } = useLanguage();
-  const  lang  = true;
+  const { lang } = useLanguage();
 
   return (
     <h1 className="flex flex-row justify-center my-16 text-5xl">

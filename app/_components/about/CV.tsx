@@ -1,9 +1,9 @@
 "use client";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function CV() {
-  let lang = true;
-  //   const { lang } = useLanguage();
+  const { lang } = useLanguage();
+
   return (
     <div className="flex flex-row justify-center py-6 mx-48 my-32 text-5xl border-4 border-black rounded-lg bg-neutral-600">
       <p>

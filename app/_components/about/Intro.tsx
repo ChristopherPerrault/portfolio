@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function Intro() {
-  //   const { lang } = useLanguage();
-  const lang = true;
+  const { lang } = useLanguage();
+
   const age =
     new Date().getFullYear() - 1986 - (new Date().getMonth() < 5 ? 1 : 0);
 

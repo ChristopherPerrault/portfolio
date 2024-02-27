@@ -2,11 +2,11 @@
 import UpArrow from "../../_assets/images/up-circular-128.ico";
 import Image from "next/image";
 import { offside } from "../../_assets/fonts/fonts";
-// import { useLanguage } from "@/app/languageContext";
+import { useLanguage } from "@/app/languageContext";
 
 export default function BackToTop() {
-//   const { lang } = useLanguage();
-  const  lang  = true;
+  const { lang } = useLanguage();
+
 
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
