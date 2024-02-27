@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import Header from "./_components/header/Header";
+import Footer from "./_components/footer/Footer";
+// import { LanguageProvider } from "./languageContext";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Chris Perrault | Portfolio",
@@ -23,7 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className="custom-border">
+          {/* <LanguageProvider> */}
+          <Header />
+          {children}
+          <Footer />
+          {/* </LanguageProvider> */}
+        </div>
+      </body>
     </html>
   );
 }

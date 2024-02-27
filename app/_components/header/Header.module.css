@@ -1,0 +1,8 @@
+/* required because stock font is too thin even on bigger text sizes */
+.shadow {
+  text-shadow: 0.2px 0.4px black;
+}
+
+.shadow:hover {
+  text-shadow: -1px 0.5px var(--primary-yellow);
+}

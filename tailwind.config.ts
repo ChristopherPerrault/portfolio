@@ -5,13 +5,23 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "!./node_modules",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontSize: {
+        custom10rem: "10rem",
+      },
+      fontFamily: {
+        handjet: ["var(--font-handjet)"],
+        offside: ["var(--font-offside)"],
+        dotGothic16: ["var(--font-dotGothic16)"],
+      },
+      colors: {},
+      cursor: {
+        orangeLinkHand: "url('/aero-link-perfect-2021.cur'), auto",
+        zoomIn: "url('/Zoom In.cur'), auto",
+        zoomOut: "url('/Zoom Out.cur'), auto",
       },
     },
   },
