@@ -2,10 +2,10 @@
 
 ### This is my portfolio site.
 
-## Access it [right here](https://chrisperrault.vercel.app/)
+## Access the original [right here](https://chrisperrault.vercel.app/)
 
 ^^^^^^^^
-!!! Currently under major construction this week (February 26th - March 1st 2024)! I am migrating my current portfolio into a much-improved TS version from JS along with major responsiveness + Tailwind upgrades. Stay tuned!
+I am upgrading the original portfolio site from JS to TS, along with many updates (March 2024)
 
 This project's main technologies:
 
