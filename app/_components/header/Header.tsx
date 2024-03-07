@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
 export default function Header() {
   const { lang } = useLanguage();
-  
 
   // used to highlight nav tab based on current page
   const pathname = usePathname();
@@ -62,12 +61,12 @@ export default function Header() {
       <LangToggle />
       <h1
         // text-custom10rem is modified in tailwind.config
-        className={`${handjet.className} text-custom10rem uppercase ${color} flex justify-center flex-wrap mt-10 mb-20`}
+        className={`${handjet.className} text-custom10rem uppercase ${color} flex justify-center flex-wrap mt-10 mb-20 select-none`}
       >
         Christopher Perrault
       </h1>
       <nav
-        className={`${dotGothic16.className} text-5xl text-black flex justify-around m-2`}
+        className={`${dotGothic16.className} text-5xl text-black flex justify-around m-2 select-none`}
       >
         <Link
           className={

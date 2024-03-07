@@ -43,7 +43,7 @@ export default function TechStack() {
           "AWS, Azure",
           lang ? "LLM/AI prompting" : "GÉNÉRATION LLM/IA",
           "Trello, Miro, Figma",
-          "Postman",
+          "Postman, Bruno",
           "VSCode, Visual Studio, IntelliJ IDEA",
         ]}
       />

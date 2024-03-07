@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <>
       <BackToTop />
-      <footer className="flex justify-center align-bottom">
+      <footer className="flex justify-center align-bottom select-none">
         <div className="relative">
           <h1
             className={`${offside.className} flex flex-row text-2xl text-black tracking-tight hover:text-[color:var(--secondary-yellow)]`}

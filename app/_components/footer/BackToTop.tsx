@@ -7,13 +7,12 @@ import { useLanguage } from "@/app/languageContext";
 export default function BackToTop() {
   const { lang } = useLanguage();
 
-
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   return (
-    <div className="flex flex-row justify-end mr-2.5 -mb-9 ">
+    <div className="flex flex-row justify-end mr-2.5 -mb-9 select-none">
       <div className="tooltip-container">
         <button onClick={scrollToTop}>
           <Image
