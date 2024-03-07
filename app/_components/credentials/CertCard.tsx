@@ -4,7 +4,23 @@ import { offside } from "../../_assets/fonts/fonts";
 import { useState } from "react";
 import styles from "./CertCard.module.css";
 
-export default function CertCard({ title, imgSrc, date, issuer, desc, frame }) {
+interface CertCardProps {
+  title: string;
+  imgSrc: string;
+  date: string;
+  issuer: string;
+  desc: string;
+  frame: string;
+}
+
+const CertCard: React.FC<CertCardProps> = ({
+  title,
+  imgSrc,
+  date,
+  issuer,
+  desc,
+  frame,
+}) => {
   // handles when user clicks on cert image to enlarge
   const [isZoomed, setIsZoomed] = useState(false);
   const handleZoomClick = () => {
@@ -39,4 +55,6 @@ export default function CertCard({ title, imgSrc, date, issuer, desc, frame }) {
       </div>
     </div>
   );
-}
+};
+
+export default CertCard;
