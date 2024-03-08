@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import GitHubLogo from "../../_assets/images/github-mark-white.png";
@@ -9,9 +8,8 @@ import { useLanguage } from "@/app/languageContext";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  const { lang } = useLanguage();
-
-  const currentYear = new Date().getFullYear();
+  const { lang }: { lang: boolean } = useLanguage();
+  const currentYear: number = new Date().getFullYear();
 
   return (
     <>
