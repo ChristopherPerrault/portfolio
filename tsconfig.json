@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/_assets/fonts",
-    "app/languageContext.js"
+    "app/languageContext.js",
+    "app/Providers.jsx"
   ],
   "exclude": ["node_modules"]
 }

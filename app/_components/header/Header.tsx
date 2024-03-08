@@ -6,6 +6,7 @@ import LangToggle from "./LangToggle";
 import { useLanguage } from "../../languageContext";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
+import ThemeSwitch from "./ThemeSwitch";
 export default function Header() {
   const { lang } = useLanguage();
 
@@ -59,6 +60,7 @@ export default function Header() {
   return (
     <header>
       <LangToggle />
+      <ThemeSwitch />
       <h1
         // text-custom10rem is modified in tailwind.config
         className={`${handjet.className} text-custom10rem uppercase ${color} flex justify-center flex-wrap mt-10 mb-20 select-none`}
