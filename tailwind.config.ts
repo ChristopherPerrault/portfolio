@@ -12,11 +12,7 @@ const config: Config = {
       fontSize: {
         custom10rem: "10rem",
       },
-      fontFamily: {
-        handjet: ["var(--font-handjet)"],
-        offside: ["var(--font-offside)"],
-        dotGothic16: ["var(--font-dotGothic16)"],
-      },
+
       colors: {},
       cursor: {
         orangeLinkHand: "url('/aero-link-perfect-2021.cur'), auto",
