@@ -8,8 +8,8 @@ export default function InProgress() {
     <div className="flex justify-center mx-28 text-[color:var(--primary-yellow)] text-3xl my-12">
       <h2 className="mx-20 mb-2">
         {lang
-          ? "In Progress (updated March 2024)"
-          : "En cours (mise à jour Mars 2024)"}
+          ? "Learning In Progress (updated March 2024)"
+          : "Apprentissage en cours (mise à jour Mars 2024)"}
       </h2>
       <ul className="list-disc mx-28">
         <li>{lang ? "React, Udemy, 70+ hours" : "React, Udemy, 70+ heures"}</li>

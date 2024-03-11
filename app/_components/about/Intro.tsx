@@ -5,7 +5,7 @@ import { useLanguage } from "@/app/languageContext";
 export default function Intro() {
   const { lang }: { lang: boolean } = useLanguage();
 
-  const age:number =
+  const age: number =
     new Date().getFullYear() - 1986 - (new Date().getMonth() < 5 ? 1 : 0);
 
   return (
@@ -22,7 +22,7 @@ export default function Intro() {
         &nbsp;
         <Link
           href={"https://callmestevepunk.bandcamp.com/album/take-one"}
-          className="hover:text-[--secondary-yellow]"
+          className="text-[--primary-bronze] hover:text-[--secondary-yellow]"
           title={
             lang ? "Listen to us on Bandcamp" : "Écoutez-nous sur Bandcamp"
           }

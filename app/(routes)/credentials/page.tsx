@@ -15,6 +15,7 @@ import software from "../../_assets/images/certs/software.jpg";
 import udemyJS from "../../_assets/images/certs/Udemy-JS-cert.jpg";
 import figma from "../../_assets/images/certs/LI-Figma.png";
 import dataStructures from "../../_assets/images/certs/LI-DataStructures.png";
+import Contributions from "@/app/_components/credentials/Contributions";
 
 export default function Credentials() {
   const { lang }: { lang: boolean } = useLanguage();
@@ -28,7 +29,7 @@ export default function Credentials() {
 
         {/* cert cards container*/}
         <div className="flex flex-col justify-center mx-24">
-          <h2 className="text-3xl flex justify-center my-12">
+          <h2 className="text-3xl flex justify-center my-12 text-[color:var(--primary-yellow)]">
             {lang ? "Key Certifications:" : "Certifications clés :"}
           </h2>
           <CertCard
@@ -74,7 +75,7 @@ export default function Credentials() {
           {/* Complementary Certifications */}
 
           <div className="flex justify-center my-6">
-            <h2 className={`text-[color:var(--primary-yellow)] my-20 text-3xl`}>
+            <h2 className="text-[color:var(--primary-yellow)] my-20 text-4xl">
               {lang
                 ? "Complementary Certifications:"
                 : "Certifications complémentaires :"}
@@ -122,7 +123,7 @@ export default function Credentials() {
             frame="frame bronze-frame"
           />
         </div>
-
+        <Contributions />
         <InProgress />
       </div>
     </>

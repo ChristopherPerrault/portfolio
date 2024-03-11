@@ -6,7 +6,7 @@ export default function Experience() {
   const { lang }: { lang: boolean } = useLanguage();
   return (
     <>
-      <h2 className="text-3xl flex justify-center my-12">
+      <h2 className="text-4xl flex justify-center my-12 text-[color:var(--primary-yellow)]">
         {lang ? "Experience:" : "Expérience:"}
       </h2>
 

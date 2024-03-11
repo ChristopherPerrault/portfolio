@@ -9,14 +9,17 @@ export default function Intro() {
     <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl">
       <h2>
         {lang
-          ? `As a proud graduate of John Abbott College, having achieved Dean's List recognition for my final two semesters, I gladly show here not only the actual diploma and technical certs I've earned, but also the ones I've been working on since. Check my `
-          : `En tant que fier diplômé du Collège John Abbott, ayant obtenu une mention sur la liste du doyen pour mes deux derniers semestres, je montre avec plaisir ici non seulement le diplôme réel et les certifications techniques que j'ai obtenus, mais aussi ceux sur lesquels je travaille depuis. Consultez ma `}
-        <Link className="hover:text-[--secondary-yellow]" href="/">
+          ? `I'm a proud Full Stack Developer graduate of John Abbott College. Have a look below at my experience & ever-growing list of achievements! Check my `
+          : `Je suis un fier diplômé en développement full stack du Cégep John Abbott. Explorez ci-dessous mon expérience et ma liste d'accomplissements en constante expansion ! Consultez ma `}
+        <Link
+          className="text-[--primary-bronze] hover:text-[--secondary-yellow]"
+          href="/about"
+        >
           {lang ? "About page" : "page À propos"}
-        </Link>{" "}
+        </Link>
         {lang
-          ? `for specific technologies I work with!`
-          : `pour connaître les technologies spécifiques avec lesquelles je travaille !`}
+          ? ` for specific technologies I've worked with!`
+          : ` pour découvrir les technologies spécifiques avec lesquelles j'ai travaillé !`}
       </h2>
     </div>
   );
