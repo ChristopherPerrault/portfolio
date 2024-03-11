@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import Header from "./_components/header/Header";
 import Footer from "./_components/footer/Footer";
 import { LanguageProvider } from "./languageContext";
 import Providers from "./Providers";
 import "./globals.css";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Chris Perrault | Portfolio",
