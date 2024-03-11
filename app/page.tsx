@@ -4,6 +4,7 @@ import ProjectCard from "./_components/projects/ProjectCard";
 import ProjectsIntro from "./_components/projects/ProjectsIntro";
 
 import { useLanguage } from "./languageContext";
+import { kreon } from "./_assets/fonts/fonts";
 
 // project asset imports
 import regexRecords from ".//_assets/images/projects/regexRecords.png";
@@ -16,16 +17,16 @@ import regexAcademy from ".//_assets/images/projects/regexAcademy.png";
 import none from ".//_assets/images/projects/none.png";
 
 export default function Projects() {
-  const { lang } = useLanguage();
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     <>
       {/* projects page container div */}
-      <div>
+      <div className={`${kreon.className}`}>
         <ProjectsIntro />
 
         {/* project cards container*/}
-        <div className="flex flex-row flex-wrap justify-center mx-24">
+        <div className={"flex flex-row flex-wrap justify-center mx-24"}>
           <ProjectCard
             title="Regex Records"
             imgSrc={regexRecords}

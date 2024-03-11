@@ -2,7 +2,7 @@
 import TechCard from "./TechCard";
 import { useLanguage } from "@/app/languageContext";
 export default function TechStack() {
-  const { lang } = useLanguage();
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     <div className="flex flex-wrap justify-center">

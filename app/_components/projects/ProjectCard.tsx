@@ -1,10 +1,19 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import { offside } from "../../_assets/fonts/fonts";
+import Image, { StaticImageData } from "next/image";
 import { useLanguage } from "@/app/languageContext";
 
-export default function ProjectCard({
+interface ProjectCardProps {
+  title: string;
+  imgSrc: string | StaticImageData;
+  mainTechs: string;
+  description: string;
+  points: string[];
+  url: string;
+  gitHubUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   imgSrc,
   mainTechs,
@@ -12,8 +21,8 @@ export default function ProjectCard({
   points,
   url,
   gitHubUrl,
-}) {
-  const { lang } = useLanguage();
+}) => {
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     // container div for top & bottom sides
@@ -30,7 +39,7 @@ export default function ProjectCard({
       </div>
 
       {/*  bottom side div  */}
-      <div className={`${offside.className} flex flex-col flex-wrap w-3/4 m-4`}>
+      <div className="flex flex-col flex-wrap w-3/4 m-4">
         <p className="my-2 text-5xl">{title}</p>
         <p className="my-2 text-3xl">{description}</p>
         <p className="my-2 text-4xl">{mainTechs}</p>
@@ -65,4 +74,5 @@ export default function ProjectCard({
       </div>
     </div>
   );
-}
+};
+export default ProjectCard;

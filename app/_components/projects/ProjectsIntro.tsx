@@ -1,13 +1,12 @@
 "use client";
-import { offside } from "../../_assets/fonts/fonts";
 import { useLanguage } from "@/app/languageContext";
 
 export default function ProjectsIntro() {
-  const { lang } = useLanguage();
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     <div
-      className={`${offside.className} flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-2xl`}
+      className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl"
     >
       <h2 className="my-4">
         {lang

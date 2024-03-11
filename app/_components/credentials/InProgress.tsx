@@ -1,25 +1,32 @@
 "use client";
-import { offside } from "../../_assets/fonts/fonts";
 import { useLanguage } from "@/app/languageContext";
 
 export default function InProgress() {
-  const { lang } = useLanguage();
-  
+  const { lang }: { lang: boolean } = useLanguage();
+
   return (
-    <div
-      className={`${offside.className} flex flex-wrap flex-col justify-center mx-28 text-[color:var(--primary-yellow)] text-2xl my-12`}
-    >
+    <div className="flex justify-center mx-28 text-[color:var(--primary-yellow)] text-3xl my-12">
       <h2 className="mx-20 mb-2">
         {lang
-          ? "In Progress (last updated Feb 2024):"
-          : "En cours (dernière mise à jour Fev 2024) :"}
+          ? "In Progress (updated March 2024)"
+          : "En cours (mise à jour Mars 2024)"}
       </h2>
       <ul className="list-disc mx-28">
-        <li>React, Udemy, 70+ hours, ~25% done!</li>
-        <li>Advanced CSS, LinkedIn Learning, 24+ hours, ~50% done!</li>
+        <li>{lang ? "React, Udemy, 70+ hours" : "React, Udemy, 70+ heures"}</li>
         <li>
-          GitHub Professional Cert, LinkedIn Learning/Github collab, 8+ hours,
-          ~10% done!
+          {lang
+            ? "Advanced CSS, LinkedIn Learning, 24+ hours"
+            : "CSS avancé, LinkedIn Learning, 24+ heures"}
+        </li>
+        <li>
+          {lang
+            ? "GitHub Actions, LinkedIn Learning + Github, 8+ hours"
+            : "GitHub Actions, LinkedIn Learning + Github, 8+ heures"}
+        </li>
+        <li>
+          {lang
+            ? "2 new Next.js portfolio projects by the end of this month!"
+            : "2 nouveaux projets de portfolio Next.js d'ici la fin de ce mois !"}
         </li>
       </ul>
     </div>

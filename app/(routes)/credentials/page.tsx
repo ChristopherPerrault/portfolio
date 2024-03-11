@@ -1,15 +1,13 @@
 "use client";
-import styles from "./page.module.css";
-
-// components, hooks imports
-import CertCard from "@/app/_components/credentials/CertCard";
-import InProgress from "@/app/_components/credentials/InProgress";
-import CertIntro from "@/app/_components/credentials/Intro";
 
 import { useLanguage } from "@/app/languageContext";
+import { kreon } from "@/app/_assets/fonts/fonts";
+import styles from "./page.module.css";
+import CertCard from "@/app/_components/credentials/CertCard";
+import InProgress from "@/app/_components/credentials/InProgress";
+import Intro from "@/app/_components/credentials/Intro";
 
 // cert asset imports
-import { offside } from "../../_assets/fonts/fonts";
 import fullstack from "../../_assets/images/certs/fullstack.jpg";
 import frontend from "../../_assets/images/certs/frontend.jpg";
 import software from "../../_assets/images/certs/software.jpg";
@@ -18,13 +16,13 @@ import figma from "../../_assets/images/certs/LI-Figma.png";
 import dataStructures from "../../_assets/images/certs/LI-DataStructures.png";
 
 export default function Credentials() {
-    const { lang } = useLanguage();
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     <>
       {/* credentials page container div */}
-      <div>
-        <CertIntro />
+      <div className={`${kreon.className}`}>
+        <Intro />
 
         {/* cert cards container*/}
         <div className="flex flex-col justify-center mx-24">
@@ -71,9 +69,7 @@ export default function Credentials() {
           {/* Complementary Certifications */}
 
           <div className="flex justify-center my-6">
-            <h2
-              className={`${offside.className} text-[color:var(--primary-yellow)] mx-32  text-2xl`}
-            >
+            <h2 className={`text-[color:var(--primary-yellow)] my-20 text-3xl`}>
               {lang
                 ? "Complementary Certifications:"
                 : "Certifications complémentaires :"}

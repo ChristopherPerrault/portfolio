@@ -6,7 +6,7 @@ import LinkedInLogo from "../../_assets/images/In-White-72-╬ô├ñ├│.png"
 import { useLanguage } from "../../languageContext";
 
 export default function SocialLinks() {
-  const { lang } = useLanguage();
+  const { lang }: { lang: boolean } = useLanguage();
 
   return (
     <h1 className="flex flex-row justify-center my-16 text-5xl">
