@@ -9,11 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        custom10rem: "10rem",
-      },
-
-      colors: {},
       cursor: {
         orangeLinkHand: "url('/aero-link-perfect-2021.cur'), auto",
         zoomIn: "url('/Zoom In.cur'), auto",
