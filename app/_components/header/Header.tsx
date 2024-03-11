@@ -2,11 +2,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { handjet, dotGothic16 } from "../../_assets/fonts/fonts";
+
 import LangToggle from "./LangToggle";
 import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../languageContext";
 import styles from "./header.module.css";
+import { dotGothic16, handjet } from "@/app/_assets/fonts/fonts";
 
 export default function Header() {
   const { lang }: { lang: boolean } = useLanguage();

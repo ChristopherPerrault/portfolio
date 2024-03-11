@@ -2,9 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import GitHubLogo from "../../_assets/images/github-mark-white.png";
 import LinkedInLogo from "../../_assets/images/In-White-72-╬ô├ñ├│.png";
-import { offside } from "../../_assets/fonts/fonts";
+
 import BackToTop from "./BackToTop";
 import styles from "./Footer.module.css";
+import { dotGothic16 } from "@/app/_assets/fonts/fonts";
 
 export default function Footer() {
   const currentYear: number = new Date().getFullYear();
@@ -15,7 +16,7 @@ export default function Footer() {
       <footer className="flex justify-center align-bottom select-none">
         <div className="relative">
           <h1
-            className={`${offside.className} flex flex-row text-2xl text-black tracking-tight hover:text-[color:var(--secondary-yellow)]`}
+            className={`${dotGothic16.className} flex flex-row text-2xl text-black tracking-tight hover:text-[color:var(--secondary-yellow)]`}
           >
             Christopher Perrault&nbsp;
             {currentYear}
