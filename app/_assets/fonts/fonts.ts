@@ -1,19 +1,29 @@
-import Handjet from "next/font/local";
-import Offside from "next/font/local";
-import DotGothic16 from "next/font/local";
+import { Inika } from "next/font/google";
+import { Offside } from "next/font/google";
+import { Handjet } from "next/font/google";
+import { DotGothic16 } from "next/font/google";
 
 //  This file serves as the entry point for fonts
-export const handjet = Handjet({
-  src: "Handjet-Light.ttf",
-  display: "swap",
+export const offside = Offside({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
 });
 
-export const offside = Offside({
-  src: "Offside-Regular.ttf",
-  display: "swap",
+export const handjet = Handjet({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
 });
 
 export const dotGothic16 = DotGothic16({
-  src: "DotGothic16-Regular.ttf",
-  display: "swap",
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+});
+
+export const inika = Inika({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
 });
