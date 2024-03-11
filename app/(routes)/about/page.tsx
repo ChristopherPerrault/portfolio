@@ -8,11 +8,11 @@ import { dotGothic16 } from "../../_assets/fonts/fonts";
 export default function About() {
   return (
     <div className={`${dotGothic16.className}`}>
-      <ProfilePic />
       <IntroBlurb />
       <CV />
       <SocialLinks />
       <TechStack />
+      <ProfilePic />
     </div>
   );
 }
