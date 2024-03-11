@@ -15,19 +15,13 @@ export default function ThemeSwitch() {
   const currentTheme = theme;
 
   return (
-    <>
+    <div className="text-5xl m-4 mt-6 cursor-pointer hover:text-amber-500">
       {mounted &&
         (currentTheme === "dark" ? (
-          <HiOutlineLightBulb
-            className="text-xl cursor-pointer hover:text-amber-500"
-            onClick={() => setTheme("light")}
-          />
+          <HiOutlineLightBulb onClick={() => setTheme("light")} />
         ) : (
-          <MdOutlineDarkMode
-            className="text-xl cursor-pointer hover:text-amber-500"
-            onClick={() => setTheme("dark")}
-          />
+          <MdOutlineDarkMode onClick={() => setTheme("dark")} />
         ))}
-    </>
+    </div>
   );
 }

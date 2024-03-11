@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 import LangToggle from "./LangToggle";
-import ThemeSwitch from "./ThemeSwitch";
+// import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../languageContext";
 import styles from "./header.module.css";
 import { dotGothic16, handjet } from "@/app/_assets/fonts/fonts";
@@ -62,8 +62,10 @@ export default function Header() {
 
   return (
     <header>
-      <LangToggle />
-      <ThemeSwitch />
+      <div className="flex flex-row justify-end">
+        {/* <ThemeSwitch /> */}
+        <LangToggle />
+      </div>
       <h1
         // text-custom10rem is modified in tailwind.config
         className={`${handjet.className} text-9xl uppercase ${color} flex justify-center flex-wrap mt-10 mb-20 select-none`}
