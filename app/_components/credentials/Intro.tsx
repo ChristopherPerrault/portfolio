@@ -18,10 +18,6 @@ export default function Intro() {
           ? `for specific technologies I work with!`
           : `pour connaître les technologies spécifiques avec lesquelles je travaille !`}
       </h2>
-
-      <h2 className="text-3xl flex justify-center mt-12">
-        {lang ? "Key Certifications:" : "Certifications clés :"}
-      </h2>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import CertCard from "@/app/_components/credentials/CertCard";
 import InProgress from "@/app/_components/credentials/InProgress";
 import Intro from "@/app/_components/credentials/Intro";
+import Experience from "@/app/_components/credentials/Experience";
 
 // cert asset imports
 import fullstack from "../../_assets/images/certs/fullstack.jpg";
@@ -23,9 +24,13 @@ export default function Credentials() {
       {/* credentials page container div */}
       <div className={`${kreon.className}`}>
         <Intro />
+        <Experience />
 
         {/* cert cards container*/}
         <div className="flex flex-col justify-center mx-24">
+          <h2 className="text-3xl flex justify-center my-12">
+            {lang ? "Key Certifications:" : "Certifications clés :"}
+          </h2>
           <CertCard
             title={lang ? "Full Stack Developer" : "Développeur Full Stack"}
             imgSrc={fullstack}
