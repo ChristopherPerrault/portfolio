@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import LangToggle from "./LangToggle";
 // import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../languageContext";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import { dotGothic16, handjet } from "@/app/_assets/fonts/fonts";
 
 export default function Header() {

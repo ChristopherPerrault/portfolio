@@ -1,4 +1,6 @@
-import { Handjet, DotGothic16, Kreon } from "next/font/google";
+import { Handjet } from "next/font/google";
+import { DotGothic16 } from "next/font/google";
+import { Kreon } from "next/font/google";
 
 //?  This file serves as the entry point for fonts
 
