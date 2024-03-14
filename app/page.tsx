@@ -105,7 +105,7 @@ export default function Projects() {
                 : ["Projet solo", "Orienté vers les détails", "Frais!"]
             }
             url=""
-            gitHubUrl="https://github.com/ChristopherPerrault/my-portfolio"
+            gitHubUrl="https://github.com/ChristopherPerrault/portfolio"
           />
 
           <ProjectCard
