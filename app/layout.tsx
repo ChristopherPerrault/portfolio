@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "./_components/header/Header";
 import Footer from "./_components/footer/Footer";
 import { LanguageProvider } from "./languageContext";
-import Providers from "./Providers";
+// import Providers from "./Providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,13 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="custom-border">
-          <Providers>
-            <LanguageProvider>
-              <Header />
-              {children}
-              <Footer />
-            </LanguageProvider>
-          </Providers>
+          {/* <Providers> */}
+          <LanguageProvider>
+            <Header />
+            {children}
+            <Footer />
+          </LanguageProvider>
+          {/* </Providers> */}
         </div>
       </body>
     </html>
