@@ -5,13 +5,11 @@ export default function ProjectsIntro() {
   const { lang }: { lang: boolean } = useLanguage();
 
   return (
-    <div
-      className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl"
-    >
+    <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl">
       <h2 className="my-4">
         {lang
-          ? "This page features some of the projects I've collaborated on or handled on my own. Each features a short description, the main technologies used, a few key points, and a link to GitHub where you can review the code behind the project. I'm happy to answer questions about any of these!"
-          : "Cette page présente certains des projets sur lesquels j'ai collaboré ou que j'ai gérés seul. Chacun comporte une courte description, les principales technologies utilisées, quelques points clés et un lien vers GitHub où vous pouvez examiner le code du projet. Je suis heureux de répondre à vos questions sur l'un de ces projets !"}
+          ? "Welcome to my portfolio showcase! Here, you'll find a curated collection of projects that I've had the privilege to work on or collaborate with talented individuals. Explore this page to discover the diverse range of endeavors I've been involved in, and gain insights into my skills, expertise, and dedication to delivering impactful results."
+          : "Bienvenue sur mon portfolio ! Ici, vous trouverez une collection sélectionnée de projets sur lesquels j'ai eu le privilège de travailler ou de collaborer avec des personnes talentueuses. Explorez cette page pour découvrir la diversité des projets auxquels j'ai participé et pour obtenir des informations sur mes compétences, mon expertise et mon dévouement à fournir des résultats significatifs."}
       </h2>
     </div>
   );

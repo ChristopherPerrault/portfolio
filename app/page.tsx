@@ -97,12 +97,12 @@ export default function Projects() {
           <ProjectCard
             title="Portfolio"
             imgSrc={myPortfolio}
-            mainTechs="Next.js, React, Tailwind CSS"
+            mainTechs="Next.js, React, Typescript, Tailwind CSS"
             description={lang ? "You're on it!" : "Vous y êtes !"}
             points={
               lang
-                ? ["Solo project", "Detail-oriented", "Fresh"]
-                : ["Projet solo", "Orienté vers les détails", "Frais"]
+                ? ["Solo project", "Detail-oriented", "Fresh!"]
+                : ["Projet solo", "Orienté vers les détails", "Frais!"]
             }
             url=""
             gitHubUrl="https://github.com/ChristopherPerrault/my-portfolio"

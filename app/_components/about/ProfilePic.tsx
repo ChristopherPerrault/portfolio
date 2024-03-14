@@ -6,8 +6,8 @@ export default function ProfilePic() {
     <div className="flex justify-center my-20">
       <Image
         src={profilePic}
-        width={600}
-        height={600}
+        width={500}
+        height={500}
         alt="Photo of/de Chris Perrault"
         title="🔥🔥🔥"
         className="rounded-full"

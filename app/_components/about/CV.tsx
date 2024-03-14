@@ -20,7 +20,7 @@ export default function CV() {
         >
           {lang ? "English" : "anglais"}
         </a>
-        {lang ? " or in " : " ou en "}
+        {lang ? "or in" : "ou en"}
         <a
           href="/FR-CV.pdf"
           download="FR-CV.pdf"

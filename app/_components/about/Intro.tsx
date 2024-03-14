@@ -32,7 +32,9 @@ export default function Intro() {
             : "être dans un groupe de punk rock"}
         </Link>
         &nbsp;
-        {lang ? "and visiting thrift stores." : "et visiter des friperies."}
+        {lang
+          ? "and treasure hunting at thrift stores."
+          : "et à la recherche de trésors dans les magasins d'occasion"}
       </h1>
     </div>
   );
