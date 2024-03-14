@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import LangToggle from "./LangToggle";
 // import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../languageContext";
-import styles from "./Header.module.css";
 import { dotGothic16, handjet } from "@/app/_assets/fonts/fonts";
 
 export default function Header() {
@@ -79,7 +78,7 @@ export default function Header() {
           className={
             pathname === "/"
               ? "text-[--secondary-yellow] cursor-default"
-              : `${styles.shadow} cursor-orangeLinkHand`
+              : `cursor-orangeLinkHand`
           }
           href="/"
         >
@@ -89,7 +88,7 @@ export default function Header() {
           className={
             pathname === "/about"
               ? "text-[--secondary-yellow] cursor-default"
-              : `${styles.shadow} cursor-orangeLinkHand`
+              : `cursor-orangeLinkHand`
           }
           href="/about"
         >
@@ -99,7 +98,7 @@ export default function Header() {
           className={
             pathname === "/credentials"
               ? "text-[--secondary-yellow] cursor-default"
-              : `${styles.shadow} cursor-orangeLinkHand`
+              : `cursor-orangeLinkHand`
           }
           href="/credentials"
         >
