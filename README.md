@@ -2,10 +2,8 @@
 
 ### This is my portfolio site.
 
-## Access the original [right here](https://chrisperrault.vercel.app/)
+## Access it [right here](https://chrisperrault.vercel.app/)
 
-^^^^^^^^
-I am upgrading the original portfolio site from JS to TS, along with many updates (March 2024)
 
 This project's main technologies:
 
@@ -19,11 +17,9 @@ I hope you enjoy it!
 
 Upcoming features:
 
-- email contact form (modal, featuring form validation + error handling)
 - responsive design
 - theme switching
-- accessibility + font overhaul
-- many more tweaks
+- many more tweaks!
 
 ---
 
