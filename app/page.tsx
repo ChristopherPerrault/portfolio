@@ -7,6 +7,7 @@ import { useLanguage } from "./languageContext";
 import { kreon } from "./_assets/fonts/fonts";
 
 // project asset imports
+import imdbClone from ".//_assets/images/projects/imdb_clone.png";
 import regexRecords from ".//_assets/images/projects/regexRecords.png";
 import myPortfolio from ".//_assets/images/projects/MyPortfolio_960x920.png";
 import ticketblaster from ".//_assets/images/projects/ticketblaster.png";
@@ -27,6 +28,29 @@ export default function Projects() {
 
         {/* project cards container*/}
         <div className={"flex flex-row flex-wrap justify-center mx-24"}>
+          <ProjectCard
+            title="IMDb_Clone"
+            imgSrc={imdbClone}
+            mainTechs="Next.js, Typescript, Tailwind"
+            description={lang ? "An IMDb Clone" : "Un clone d'IMDb"}
+            points={
+              lang
+                ? [
+                    "API usage",
+                    "Responsive design",
+                    "Custom errors & fallbacks",
+                    "Light/Dark themes",
+                  ]
+                : [
+                    "Utilisation des APIs",
+                    "Design réactif",
+                    "Erreurs personnalisées",
+                    "Options de thème",
+                  ]
+            }
+            url="https://imdb-clone-delta-beryl.vercel.app/"
+            gitHubUrl="https://github.com/ChristopherPerrault/imdb_clone"
+          />
           <ProjectCard
             title="Regex Records"
             imgSrc={regexRecords}
