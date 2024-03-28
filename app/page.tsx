@@ -75,7 +75,9 @@ export default function Projects() {
                     "Fonctionnalités de place de marché et de médias sociaux",
                   ]
             }
-            url="https://www.laravelprojectfsd05.com"
+            // url="https://www.laravelprojectfsd05.com"
+            // site is currently down (28/03/2024)
+            url=""
             gitHubUrl="https://github.com/kevindarbydev/RegexRecords"
           />
 

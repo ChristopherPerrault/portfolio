@@ -29,12 +29,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="flex flex-col w-full md:w-1/2 lg:w-1/3 xl:w-1/4 m-8 my-6 border rounded-md shadow-xl border-neutral-950 bg-neutral-500">
       {/*  top side div */}
       <div className="w-full ">
-        <Image
-          src={imgSrc}
-          // width={900}
-          height={900}
-          alt={lang ? "Project screenshot" : "Capture d'écran du projet"}
-        />
+        {/* conditonally wraps the Image in a Link if the url prop exists, otherwise image is not clickable */}
+        {url ? (
+          <Link href={url}>
+            <Image
+              src={imgSrc}
+              height={900}
+              alt={lang ? "Project screenshot" : "Capture d'écran du projet"}
+            />
+          </Link>
+        ) : (
+          <Image
+            src={imgSrc}
+            height={900}
+            alt={lang ? "Project screenshot" : "Capture d'écran du projet"}
+          />
+        )}
       </div>
 
       {/*// TODO: text-wrap + whitespace-normal attempts to keep text from overflowing on smaller screens, but it still does in a few cases */}
