@@ -8,7 +8,7 @@ export default function BackToTop() {
   }
 
   return (
-    <div className="flex flex-row justify-end mr-2.5 -mb-9 select-none">
+    <div className="flex flex-row justify-end mr-8 -mb-9 select-none">
       <div className="tooltip-container">
         <button onClick={scrollToTop}>
           <Image
