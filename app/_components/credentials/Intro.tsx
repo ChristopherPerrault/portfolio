@@ -6,7 +6,7 @@ export default function Intro() {
   const { lang }: { lang: boolean } = useLanguage();
 
   return (
-    <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl">
+    <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-4xl">
       <h2>
         {lang
           ? `I'm a proud Full Stack Developer graduate of John Abbott College. Have a look below at my experience & ever-growing list of achievements! Check my `

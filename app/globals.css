@@ -10,7 +10,7 @@
   --primary-bronze: #b06c28;
 }
 
-/* surrounds every page, found in layout.js */
+/* surrounds every page, found in layout.tsx */
 .custom-border {
   margin: 0.7rem;
   border-left: 10px solid;
@@ -18,4 +18,27 @@
   border-top: 7px solid black;
   border-bottom: 32px solid black;
   border-radius: 2.4%;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .custom-border {
+    margin: 1rem;
+    border-left: 12px solid;
+    border-right: 12px solid;
+    border-top: 8px solid black;
+    border-bottom: 36px solid black;
+    border-radius: 3%;
+  }
+}
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .custom-border {
+    margin: 1.5rem;
+    border-left: 14px solid;
+    border-right: 14px solid;
+    border-top: 9px solid black;
+    border-bottom: 40px solid black;
+    border-radius: 4%;
+  }
 }

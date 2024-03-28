@@ -9,7 +9,7 @@ export default function Intro() {
     new Date().getFullYear() - 1986 - (new Date().getMonth() < 5 ? 1 : 0);
 
   return (
-    <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-5xl">
+    <div className="flex flex-col flex-wrap justify-center mx-60 text-[color:var(--primary-yellow)] my-24 text-4xl">
       <h1>
         {lang
           ? `Hey ! I'm Chris, a ${age} year old Montreal resident who writes computer code! I pivoted towards full stack development from a career in cooking and it suits me well.`

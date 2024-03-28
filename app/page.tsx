@@ -27,7 +27,9 @@ export default function Projects() {
         <ProjectsIntro />
 
         {/* project cards container*/}
-        <div className={"flex flex-row flex-wrap justify-center mx-24"}>
+        <div
+          className={"flex flex-col md:flex-row flex-wrap justify-center mx-24"}
+        >
           <ProjectCard
             title="IMDb_Clone"
             imgSrc={imdbClone}
