@@ -13,15 +13,7 @@ Built as a way for me to dive into Next.js 14 and Vercel for the first time. I o
 
 I hope you enjoy it!
 
----
 
-Upcoming features:
-
-- responsive design
-- theme switching
-- many more tweaks!
-
----
 
 ⭐ **Give a Star** to motivate me!
 Check out [my LinkedIn profile](https://www.linkedin.com/in/christopherperrault/)
