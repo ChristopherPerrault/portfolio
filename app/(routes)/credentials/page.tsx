@@ -124,7 +124,7 @@ export default function Credentials() {
           />
         </div>
         <Contributions />
-        <InProgress />
+        {/* <InProgress /> */}
       </div>
     </>
   );
